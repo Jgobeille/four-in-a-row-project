@@ -11,6 +11,6 @@ beginGameButton.addEventListener("click", () => {
     */
 
   newGame.startGame();
-  this.style.display = "none";
+  beginGameButton.style.display = "none";
   document.getElementById("play-area").style.opacity = "1";
 });
