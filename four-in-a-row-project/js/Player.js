@@ -23,6 +23,10 @@ class Player {
     return tokens;
   }
 
+  checkTokens() {
+    return this.unusedTokens.length == 0 ? false : true;
+  }
+
   get unusedTokens() {
     return this.tokens.filter(token => !token.dropped);
   }
